@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currency_navigation"
+    app:startDestination="@id/compareCurrenciesFragment">
+
+    <fragment
+        android:id="@+id/compareCurrenciesFragment"
+        android:name="com.maher.currencyconverter.presentation.compareTwoCurrencies.CompareCurrenciesFragment"
+        android:label="@string/compare_currencies_fragment"
+        tools:layout="@layout/fragment_compare_currencies" />
+
+</navigation>
