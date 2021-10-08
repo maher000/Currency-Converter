@@ -1,6 +1,6 @@
 package com.maher.currencyconverter.data.network.dto
 
-data class ConvertResponse(
-    val meta: Meta,
+data class ConvertCurrencyResponseDto(
+    val meta: CurrencyMetaDeto,
     val response: CurrencyComparatorDto
 )

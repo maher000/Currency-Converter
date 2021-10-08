@@ -39,6 +39,9 @@ class CompareCurrenciesFragment : Fragment() {
         lifecycleScope.launchWhenStarted {
             mViewModel.currencyComparison.collect { state ->
                 when (state) {
+                    is CompareTwoCurrenciesState.Default -> {
+                        // Default behavior goes here if there is any
+                    }
                     is CompareTwoCurrenciesState.Success -> {
                         stopLoading()
                         tvResult.text = state.result
