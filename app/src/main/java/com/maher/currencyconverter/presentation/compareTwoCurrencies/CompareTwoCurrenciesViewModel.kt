@@ -48,9 +48,10 @@ internal class CompareTwoCurrenciesViewModel @Inject constructor(
                             mCurrencyComparison.value =
                                 CompareTwoCurrenciesState.Error("An unexpected Error occurred")
                         }
-                        is Resource.Error -> CompareTwoCurrenciesState.Error(
-                            result.message ?: "An unexpected Error occurred"
-                        )
+                        is Resource.Error -> mCurrencyComparison.value =
+                            CompareTwoCurrenciesState.Error(
+                                result.message ?: "An unexpected Error occurred"
+                            )
                     }
                 }
             }
