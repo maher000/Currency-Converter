@@ -1,11 +1,9 @@
 package com.maher.currencyconverter.presentation.compareTwoCurrencies
 
-import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.maher.currencyconverter.common.DispatcherProvider
 import com.maher.currencyconverter.common.Resource
-import com.maher.currencyconverter.domain.model.CurrencyComparator
 import com.maher.currencyconverter.domain.model.CurrencySymbol
 import com.maher.currencyconverter.domain.useCases.CompareTwoCurrencies
 import com.maher.currencyconverter.presentation.model.ValidInput

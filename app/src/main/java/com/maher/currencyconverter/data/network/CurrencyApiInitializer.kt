@@ -1,6 +1,6 @@
 package com.maher.currencyconverter.data.network
 
-import com.maher.currencyconverter.data.CurrencyException.*
+import com.maher.currencyconverter.domain.CurrencyException.*
 
 object CurrencyApiInitializer {
     private var isInitialized = false
